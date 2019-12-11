@@ -12,12 +12,16 @@
 </head>
 <body>
 
+  <div class="skip-links">
+    <a href="#navigation">Jump to navigation</a>
+    <a href="#main">Jump to main content</a>
+
   <div id="top"></div>
 
     <header role="banner" class="header">
       <nav role="navigation" class="mobile pad-t">
         <div id="menutoggle">
-          <input type="checkbox"></input>
+          <input type="checkbox" />
           <span></span>
           <span></span>
           <span></span>
@@ -30,7 +34,7 @@
           </ul>
         </div>
       </nav>
-      <nav role="navigation" class="desktop">
+      <nav role="navigation" id="navigation" tabindex="0" class="desktop">
         <ul class="list-group-inline gutter-1-2">
           <li><a class="link-box gutter-1-4 milli" href="rescues.html">Available Dogs</a></li>
           <li><a class="link-box gutter-1-4 milli" href="adopt.html">Adoption & Fostering</a></li>
@@ -56,7 +60,7 @@
       </div>
     </header>
 
-    <main role="main">
+    <main role="main" id="main" tabindex="0">
       <div class="background">
         <div class="gutter-2 pad-t-2 pad-b-2 about-us">
           <h2 class="tena">About us</h2>
