@@ -4,12 +4,105 @@
   <meta charset="utf-8">
   <title>Animal rescue website</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+
+  <header class="header pad-t-2">
+    <a name="top"></a>
+    <nav class="hidden">
+      <ul class="list-group-inline">
+        <li><a href="">Available Dogs</a></li>
+        <li><a href="">Adoption & Fostering</a></li>
+        <li><a href="">Surrendering</a></li>
+        <li><a href="">Support Us</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 class="text-center tenamega bold">Henlo!</h1>
+    <p class="russ text-center gutter-2">My name is Russ and I think you look like my new best friend.</p>
+    <div class="center-content">
+      <a class="btn btn-ghost cta-btn" href="#">Adopt Me Now</a>
+    </div>
+    <div>
+      <img class="img-flex" src="images/russ.png" alt="">
+    </div>
+  </header>
+
+  <main>
+    <div class="gutter-2 pad-t-2 pad-b-2 about-us">
+      <h2 class="tena">About us</h2>
+      <p>Freedom Dog Rescue is a non-profit registered charity which was founded in Ottawa in February 2015. We are an all-breed, all-size foster based rescue which operates in Ottawa and surrounding areas. We are dedicated to rescuing homeless and abandoned dogs, dogs from shelters and taking in desperate owner surrenders when they can no longer care for them. </p>
+      <p>We do so by working with committed volunteers, foster homes, local veterinarians, and trainers. We are able to rescue dogs in need and provide them with loving temporary care until a well-matched carefully screened “furever home” is found. </p>
+    </div>
+    <div class="background">
+      <div class="gutter">
+        <div class="relative support pad-t-1-2 pad-b-1-2">
+          <p class="pad-t tera gutter">We are extremely grateful for your endless support in helping Freedom Dog Rescue become who we are today and what we will become in the future.</p>
+          <img class="absolute pug img-flex" src="images/pug.png" alt="">
+        </div>
+      </div>
+      <div class="center-content pad-t-1-2 adopt push-2">
+        <h3 class="nina text-center gutter-2">We’re looking for our fur-ever homes</h2>
+        <div class="dog-1 gutter-2 push-2">
+          <img class="img-flex" src="images/doggo-1.png" alt="">
+        </div>
+        <div class="dog-4 push-2 gutter-2">
+          <img class="img-flex" src="images/doggo-4.png" alt="">
+        </div>
+        <a class="pack btn btn-ghost" href="">Meet the Whole Pack</a>
+      </div>
+      <div class="events gutter-2 push-2">
+        <h3 class="tena text-center">Current Events</h2>
+        <section class="card">
+          <p>Howl-iday Photos with Santa</p>
+          <img class="img-flex" src="images/event-1.jpg" alt="">
+        </section>
+        <section class="card">
+          <p>Freedom Dog Rescue Meet & Greet</p>
+          <img class="img-flex" src="images/event-2.jpg" alt="">
+        </section>
+        <section class="card">
+          <p>Mental Health Doggie Cuddle Days</p>
+          <img class="img-flex" src="images/event-3.jpg" alt="">
+        </section>
+      </div>
+    </div>
+    <div class="gutter text-center donate">
+      <h3 class="pad-t-2 text-center tena bold gutter-2 push-1-2">Let’s Get This Paw-ty Started!</h3>
+      <p class="blue gutter-2">Every donation helps us get all the food and treats we love</p>
+      <a class="pack btn btn-ghost" href="">Make a Donation</a>
+      <img class="img-flex" src="images/donate.png" alt="">
+    </div>
+  </main>
+
+  <footer>
+    <div class="top center-content pad-t-1-2 push-1-2">
+      <a class="link-box" href="#top">Back to top</a>
+    </div>
+    <form class="pad-t">
+      <div class="gutter center-content">
+        <label class="push-1-2 text-center" for="email">Subscribe to our newsletter</label>
+        <input class="push-1-2" id="email" type="email" placeholder="me@me.com" required>
+        <button class="pack" type="submit">Subscribe</button>
+      </div>
+    </form
+    <i class="icon i-96">
+      <svg><use xlink:href="images/social-icons.svg#facebook" /></svg>
+    </i>
+    <i class="icon i-96">
+      <svg><use xlink:href="images/social-icons.svg#instagram" /></svg>
+    </i>
+    <i class="icon i-96">
+      <svg><use xlink:href="images/social-icons.svg#twitter" /></svg>
+    </i>
+    <p class="pico text-center push-0">ALL BREED DOG RESCUE IN OTTAWA © ALL RIGHTS RESERVED</p>
+  </footer>
+
 
 </body>
 </html>

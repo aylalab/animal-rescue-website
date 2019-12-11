@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Animal rescue website</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="adoption pad-t-2">
+    <a name="top"></a>
+    <nav class="hidden">
+      <ul class="list-group-inline">
+        <li><a href="">Available Dogs</a></li>
+        <li><a href="">Adoption & Fostering</a></li>
+        <li><a href="">Surrendering</a></li>
+        <li><a href="">Support Us</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 class="text-center tenamega bold">Adoption Form</h1>
+    <p class="russ text-center gutter-2">Congrats on taking the first step to finding your new best friend! Please fill out the form below to begin the adoption process.</p>
+    <p class="milli russ text-center gutter-2">If you have not done so already, please read the terms of our adoption process here.</p>
+    <div class="center-content">
+      <img class="puggie img-flex" src="images/pug.png" alt="">
+    </div>
+  </header>
+
+  <form class="gutter background-form personal-info">
+    <h2 class="tena pad-t-2 text-center form">Tell us about yourself</h2>
+    <div>
+      <label class="label" for="name">Full Name</label>
+      <input id="name" required>
+    </div>
+    <div>
+      <label class="label" for="occupation">Occupation</label>
+      <input id="occupation">
+    </div>
+    <div>
+      <label class="label" for="age">Age</label>
+      <input type="number" id="age" maxlength="3">
+    </div>
+    <div>
+      <label  class="label" for="phone">Phone Number</label>
+      <input type="tel" id="phone">
+    </div>
+    <div>
+      <label  class="label" for="address">Address</label>
+      <input class="push-1-4" type="text" id="address">
+      <input class="push-1-4" type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input type="text" id="address">
+    </div>
+    <div>
+      <label  class="label" for="live">Do you live in a:</label>
+      <select id="live">
+        <option>House</option>
+        <option>Townhouse</option>
+        <option>Apartment</option>
+        <option>Condo</option>
+        <option>Duplex</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <fieldset>
+      <legend class="label" >Do you:</legend>
+
+      <input type="radio" id="rent" name="live">
+      <label class="label" for="rent">Rent</label>
+
+      <input type="radio" id="own" name="live">
+      <label class="label" for="own">Own</label>
+
+      <input type="radio" id="freeload" name="live">
+      <label class="label" for="freeload">Live with parents</label>
+
+      <input type="radio" id="other" name="live">
+      <label class="label" for="other">Other</label>
+    </fieldset>
+
+    <div>
+      <label class="label" for="why">Why do you want to adopt a dog?</label>
+      <textarea id="why"></textarea>
+    </div>
+
+    <div>
+      <label class="label" for="doggo">Dog of interest</label>
+      <select id="doggo">
+        <option>Mai</option>
+        <option>Lucy</option>
+        <option>Gus</option>
+        <option>Pal</option>
+        <option>Snickers</option>
+      </select>
+    </div>
+
+    <fieldset>
+      <legend class="label" >Do you have a preference of male or female?</legend>
+
+      <input type="radio" id="male" name="gender">
+      <label class="label" for="male">Male</label>
+
+      <input type="radio" id="female" name="gender">
+      <label class="label" for="female">Female</label>
+    </fieldset>
+
+    <fieldset class="push-0">
+      <legend class="label" >Are you willing to adopt a dog of any age?</legend>
+
+      <input type="radio" id="yes" name="age">
+      <label class="label" for="yes">Yes</label>
+
+      <input type="radio" id="no" name="age">
+      <label class="label" for="no">No</label>
+    </fieldset>
+  </form>
+
+  <form class="background-form references">
+    <h2 class="tena text-center russ">References, please</h2>
+    <h3>Reference #1</h3>
+    <div>
+      <label class="label" for="name">Full Name</label>
+      <input id="name" required>
+    </div>
+    <div>
+      <label class="label" for="address">Address</label>
+      <input class="push-1-4" type="text" id="address">
+      <input class="push-1-4" type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input type="text" id="address">
+    </div>
+    <div>
+      <label class="label" for="phone">Phone Number</label>
+      <input type="tel" id="phone">
+    </div>
+    <div>
+      <label class="label" for="email">Email</label>
+      <input type="email" id="email">
+    </div>
+    <div>
+      <label class="label" for="relation">Relationship to applicant</label>
+      <input type="text" id="relation">
+    </div>
+    <h3>Reference #2</h3>
+    <div>
+      <label class="label" for="name">Full Name</label>
+      <input id="name" required>
+    </div>
+    <div>
+      <label class="label" for="address">Address</label>
+      <input class="push-1-4" type="text" id="address">
+      <input class="push-1-4" type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input class="push-1-4"  type="text" id="address">
+      <input type="text" id="address">
+    </div>
+    <div>
+      <label class="label" for="phone">Phone Number</label>
+      <input type="tel" id="phone">
+    </div>
+    <div>
+      <label class="label" for="email">Email</label>
+      <input type="email" id="email">
+    </div>
+    <div>
+      <label class="label" for="relation">Relationship to applicant</label>
+      <input type="text" id="relation">
+    </div>
+    <div class="center-content pad-b-2 pad-t-1-2">
+      <button class="btn btn-ghost" type="submit">Submit</button>
+    </div>
+  </form>
+
+  <footer>
+    <div class="top center-content pad-t-1-2 push-1-2">
+      <a class="link-box" href="#top">Back to top</a>
+    </div>
+    <form class="pad-t">
+      <div class="gutter center-content">
+        <label class="push-1-2 text-center" for="email">Subscribe to our newsletter</label>
+        <input class="push-1-2" id="email" type="email" placeholder="me@me.com" required>
+        <button class="pack" type="submit">Subscribe</button>
+      </div>
+    </form
+    <i class="icon i-96">
+      <svg><use xlink:href="images/social-icons.svg#facebook" /></svg>
+    </i>
+    <i class="icon i-96">
+      <svg><use xlink:href="images/social-icons.svg#instagram" /></svg>
+    </i>
+    <i class="icon i-96">
+      <svg><use xlink:href="images/social-icons.svg#twitter" /></svg>
+    </i>
+    <p class="pico text-center push-0">ALL BREED DOG RESCUE IN OTTAWA © ALL RIGHTS RESERVED</p>
+  </footer>
+
+  </body>
+  </html>
