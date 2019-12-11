@@ -14,19 +14,28 @@
 
   <header class="header pad-t-2">
     <a name="top"></a>
-    <nav class="hidden">
-      <ul class="list-group-inline">
-        <li><a href="">Available Dogs</a></li>
-        <li><a href="">Adoption & Fostering</a></li>
-        <li><a href="">Surrendering</a></li>
-        <li><a href="">Support Us</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="list-group-inline" id="menu">
+          <a href="rescues.html"><li>Available Dogs</li></a>
+          <a href="adopt.html"><li>Adoption & Fostering</li></a>
+          <a href="#"><li>Surrendering</li></a>
+          <a href="#"><li>Support Us</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+      </div>
     </nav>
+    <i class="icon i-64 pin-right-top">
+      <a href="index.html"><img class="pad-t-1-2" src="images/logo.svg" alt=""></a>
+    </i>
     <h1 class="text-center tenamega bold">Henlo!</h1>
-    <p class="russ text-center gutter-2">My name is Russ and I think you look like my new best friend.</p>
+    <p class="russ text-center gutter-2 push-2">My name is Russ and I think you look like my new best friend.</p>
     <div class="center-content">
-      <a class="btn btn-ghost cta-btn" href="#">Adopt Me Now</a>
+      <a class="btn btn-ghost cta-btn" href="adopt.html">Adopt Me Now</a>
     </div>
     <div>
       <img class="img-flex" src="images/russ.png" alt="">
@@ -46,7 +55,7 @@
           <img class="absolute pug img-flex" src="images/pug.png" alt="">
         </div>
       </div>
-      <div class="center-content pad-t-1-2 adopt push-2">
+      <div class="center-content pad-t-1-2 push-2">
         <h3 class="nina text-center gutter-2">We’re looking for our fur-ever homes</h2>
         <div class="dog-1 gutter-2 push-2">
           <img class="img-flex" src="images/doggo-1.png" alt="">
@@ -54,7 +63,9 @@
         <div class="dog-4 push-2 gutter-2">
           <img class="img-flex" src="images/doggo-4.png" alt="">
         </div>
-        <a class="pack btn btn-ghost" href="">Meet the Whole Pack</a>
+        <div class="wrap">
+          <a class="pack btn btn-ghost" href="">Meet the Whole Pack</a>
+        </div>
       </div>
       <div class="events gutter-2 push-2">
         <h3 class="tena text-center">Current Events</h2>
@@ -87,7 +98,7 @@
     <form class="pad-t">
       <div class="gutter center-content">
         <label class="push-1-2 text-center" for="email">Subscribe to our newsletter</label>
-        <input class="push-1-2" id="email" type="email" placeholder="me@me.com" required>
+        <input class="push" id="email" type="email" placeholder="me@me.com" required>
         <button class="pack" type="submit">Subscribe</button>
       </div>
     </form
