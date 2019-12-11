@@ -2,6 +2,28 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.dog-2 {
+  display: none;
+}
+
+.russ a {
+  color: #fff;
+}
+
+.russ a:hover {
+  color: #F1C33D;
+  transition: all 0.3s ease 0s;
+}
+
+
+.donate {
+  margin-top: 20px;
+}
+
+.desktop {
+  display: none;
+}
+
 #menuToggle
 {
   display: block;
@@ -120,11 +142,6 @@ html {
 #menuToggle input:checked ~ ul
 {
   transform: none;
-}
-
-
-.terms {
-  color: #F1C33D;
 }
 
 .header {
@@ -448,15 +465,123 @@ footer {
   color: #fff;
 }
 
+.link-box {
+  color: #fff;
+}
+
 
 @media only screen and (min-width: 60em) {
 
 .desktop {
-  visibility: visible;
+  display: block;
+  padding-top: 0;
+}
+
+.desktop a:hover {
+  color: #F1C33D;
+  border-bottom: 3px solid #F1C33D;
+  transition: all 0.3s ease 0s;
+  transform: translateY(-5px);
+}
+
+.russ {
+  margin-bottom: 50px;
+}
+
+.pug {
+  height: 300px;
+  width: 250px;
+  bottom: 0px;
+  top: 10px;
+  right: 0px;
+}
+
+.support {
+  padding-bottom: 57px;
+}
+
+.support p {
+  padding-top: 80px;
+}
+
+.card img {
+  height: 400px;
+  width: 300px;
+}
+
+.dog-2 {
+  display: block;
 }
 
 .mobile {
   visibility: hidden;
 }
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    float: right;
+    left: 450px;
+    border-radius: 100px;
+    transition: all 0.3s ease 0s;
+}
+
+.party-pug {
+  height: 300px;
+  width: 400px;
+}
+
+.mai img {
+  height: 600px;
+  width: 500px;
+}
+
+.lucy img {
+  height: 570px;
+  width: 500px;
+}
+
+.gus img {
+  height: 500px;
+  width: 500px;
+}
+
+.pal img {
+  height: 500px;
+  width: 420px;
+}
+
+.snickers img {
+  height: 500px;
+  width: 470px;
+}
+
+@media only screen and (min-width: 90em) {
+
+  .pug {
+    height: 250px;
+    width: 220px;
+    bottom: 0px;
+    top: 35px;
+    right: 0px;
+  }
+
+  .puggie {
+    height: 300px;
+  }
+
+  .card img {
+    height: 550px;
+    width: 400px;
+  }
+
+  #myBtn {
+      position: fixed;
+      bottom: 20px;
+      float: right;
+      left: 700px;
+      border-radius: 100px;
+      transition: all 0.3s ease 0s;
+  }
 
 }

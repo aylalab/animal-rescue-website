@@ -12,9 +12,8 @@
 </head>
 <body>
 
-  <header class="adoption pad-t">
-    <a name="top"></a>
-    <nav role="navigation">
+  <header class="adoption">
+    <nav role="navigation" class="gutter pad-t mobile">
       <div id="menuToggle">
         <input type="checkbox" />
         <span></span>
@@ -22,195 +21,244 @@
         <span></span>
         <ul class="list-group-inline" id="menu">
           <a href="rescues.html"><li>Available Dogs</li></a>
-          <a href="#"><li>Adoption & Fostering</li></a>
+          <a href="adopt.html"><li>Adoption & Fostering</li></a>
           <a href="#"><li>Surrendering</li></a>
           <a href="#"><li>Support Us</li></a>
           <a href="#"><li>Contact</li></a>
         </ul>
       </div>
     </nav>
+    <nav role="navigation" class="gutter-1-2 desktop">
+      <ul class="list-group-inline gutter-1-2">
+        <li><a class="link-box gutter-1-4 milli" href="rescues.html">Available Dogs</a></li>
+        <li><a class="link-box gutter-1-4 milli" href="adopt.html">Adoption & Fostering</a></li>
+        <li><a class="link-box gutter-1-4 milli" href="#">Surrendering</a></li>
+        <li><a class="link-box gutter-1-4 milli" href="#">Support Us</a></li>
+        <li><a class="link-box gutter-1-4 milli" href="#">Contact</a></li>
+      </ul>
+    </nav>
     <i class="icon i-64 pin-right-top">
       <a href="index.html"><img class="pad-t-1-2" src="images/logo.svg" alt=""></a>
     </i>
-    <h1 class="text-center tenamega bold pad-t-2">Adoption Form</h1>
-    <p class="russ text-center gutter-2">Congrats on taking the first step to finding your new best friend! Please fill out the form below to begin the adoption process.</p>
-    <p class="milli russ text-center gutter-2">If you have not done so already, please read the terms of our adoption process <a class="terms link-box" href="">here.</a></p>
-    <div class="center-content">
-      <img class="puggie img-flex" src="images/pug.png" alt="">
-    </div>
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-1 l-2-3 xl-2-3">
+        <h1 class="text-center tenamega bold pad-t-2">Adoption Form</h1>
+        <p class="russ text-center gutter-2 max-length">Congrats on taking the first step to finding your new best friend! Please fill out the form below to begin the adoption process.</p>
+        <p class="milli russ text-center gutter-2 max-length">If you have not done so already, please read the terms of our adoption process <a href="">here.</a></p>
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-1-3 xl-1-3 center-content">
+        <img class="puggie img-flex" src="images/pug.png" alt="">
+      </div>
   </header>
 
   <form class="gutter background-form personal-info">
     <div class="grid">
       <h2 class="unit xs-1 s-1 tena pad-t-2 text-center form">Tell us about yourself</h2>
-      <div class="unit xs-1 s-1 push-1-2">
-        <label class="label push-1-4" for="name">Full Name</label>
-        <input id="name" required>
-      </div>
-      <div class="unit xs-1 s-1 push-1-2">
-        <label class="label push-1-4" for="occupation">Occupation</label>
-        <input id="occupation">
-      </div>
-      <div class="unit xs-1-3 s-2-3 space push-1-2">
-        <label class="label push-1-4" for="age">Age</label>
-        <input type="number" id="age" maxlength="3">
-      </div>
-      <div class="margin unit xs-2-3 s-2-3 push-1-2">
-        <label  class="label push-1-4" for="phone">Phone Number</label>
-        <input type="tel" id="phone">
-      </div>
-      <div class="unit xs-1 s-1 push-1-4">
-        <label class="label push-1-4" for="address">Address</label>
-        <input class="push-1-2" type="text" id="address" placeholder="Street Address">
-      </div>
-      <div class="unit xs-1 s-1 push-1-4">
-        <input class="push-1-2" type="text" id="address" placeholder="Street Address Line 2">
-      </div>
-      <div class="unit xs-1-3 s-1-3 space push-1-4">
-        <input class="push-1-2"  type="text" id="address" placeholder="City">
-      </div>
-      <div class="unit xs-2-3 s-2-3 push-1-4">
-        <input class="push-1-2"  type="text" id="address" placeholder="Province">
-      </div>
-      <div class="unit xs-1-3 s-1-3 space push-1-4">
-        <input class="push-1-2"  type="text" id="address" placeholder="Postal Code">
-      </div>
-      <div class="unit xs-2-3 s-2-3 push-1-2">
-        <input class="push-1-2"  type="text" id="address" placeholder="Country">
-      </div>
-      <div class="unit xs-1 s-1 push">
-        <label class="label push-1-4" for="live">Do you live in a:</label>
-        <select class="gutter-1-2" id="live">
-          <option>House</option>
-          <option>Townhouse</option>
-          <option>Apartment</option>
-          <option>Condo</option>
-          <option>Duplex</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <fieldset class="unit xs-1 s-1 push-0">
-        <legend class="label push-1-4 not-bold mega" >Do you:</legend>
+      <div class="grid">
+        <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 gutter">
+          <div class="grid">
+            <div class="unit xs-1 s-1 push-1-2">
+              <label class="label push-1-4" for="name">Full Name</label>
+              <input id="name" required>
+            </div>
+            <div class="unit xs-1 s-1 push-1-2">
+              <label class="label push-1-4" for="occupation">Occupation</label>
+              <input id="occupation">
+            </div>
+            <div class="unit xs-1-3 s-1-3 space push-1-2">
+              <label class="label push-1-4" for="age">Age</label>
+              <input type="number" id="age" maxlength="3">
+            </div>
+            <div class="margin unit xs-2-3 s-2-3 push-1-2">
+              <label  class="label push-1-4" for="phone">Phone Number</label>
+              <input type="tel" id="phone">
+            </div>
+            <div class="unit xs-1 s-1 push-1-4">
+              <label class="label push-1-4" for="address">Address</label>
+              <input class="push-1-2" type="text" id="address" placeholder="Street Address">
+            </div>
+            <div class="unit xs-1 s-1 push-1-4">
+              <input class="push-1-2" type="text" id="address" placeholder="Street Address Line 2">
+            </div>
+            <div class="unit xs-1-3 s-1-3 space push-1-4">
+              <input class="push-1-2"  type="text" id="address" placeholder="City">
+            </div>
+            <div class="unit xs-2-3 s-2-3 push-1-4">
+              <input class="push-1-2"  type="text" id="address" placeholder="Province">
+            </div>
+            <div class="unit xs-1-3 s-1-3 space push-1-4">
+              <input class="push-1-2"  type="text" id="address" placeholder="Postal Code">
+            </div>
+            <div class="unit xs-2-3 s-2-3 push-1-2">
+              <input class="push-1-2"  type="text" id="address" placeholder="Country">
+            </div>
+          </div>
+          <div class="unit xs-1 s-1 push">
+            <label class="label push-1-4" for="live">Do you live in a:</label>
+            <select class="gutter-1-2" id="live">
+              <option>House</option>
+              <option>Townhouse</option>
+              <option>Apartment</option>
+              <option>Condo</option>
+              <option>Duplex</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <fieldset class="unit xs-1 s-1 push-0">
+            <legend class="label push-1-4 not-bold mega" >Do you:</legend>
 
-        <ul class="list-group">
-          <li>
-            <input type="radio" id="rent" name="live">
-            <label class="label push-1-4" for="rent">Rent</label>
-          </li>
-          <li>
-            <input type="radio" id="own" name="live">
-            <label class="label push-1-4" for="own">Own</label>
-          </li>
-          <li>
-            <input type="radio" id="freeload" name="live">
-            <label class="label push-1-4" for="freeload">Live with parents</label>
-          </li>
-          <li>
-            <input type="radio" id="other" name="live">
-            <label class="label push-1-4" for="other">Other</label>
-          </li>
-        </ul>
-      </fieldset>
+            <ul class="list-group">
+              <li>
+                <input type="radio" id="rent" name="live">
+                <label class="label push-1-4" for="rent">Rent</label>
+              </li>
+              <li>
+                <input type="radio" id="own" name="live">
+                <label class="label push-1-4" for="own">Own</label>
+              </li>
+              <li>
+                <input type="radio" id="freeload" name="live">
+                <label class="label push-1-4" for="freeload">Live with parents</label>
+              </li>
+              <li>
+                <input type="radio" id="other" name="live">
+                <label class="label push-1-4" for="other">Other</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 gutter">
+          <div class="unit xs-1 s-1 push">
+            <label class="label push-1-4" for="why">Why do you want to adopt a dog?</label>
+            <textarea id="why"></textarea>
+          </div>
 
-      <div class="unit xs-1 s-1 push">
-        <label class="label push-1-4" for="why">Why do you want to adopt a dog?</label>
-        <textarea id="why"></textarea>
+          <div class="unit xs-1 s-1 push">
+            <label class="label push-1-4" for="doggo">Dog of interest</label>
+            <select class="gutter-1-2" id="doggo">
+              <option>Mai</option>
+              <option>Lucy</option>
+              <option>Gus</option>
+              <option>Pal</option>
+              <option>Snickers</option>
+            </select>
+          </div>
+
+          <fieldset class="unit xs-1 s-1 push-0">
+            <legend class="label push-1-4 not-bold" >Do you have a preference of male or female?</legend>
+            <ul class="list-group">
+              <li>
+                <input type="radio" id="male" name="gender">
+                <label class="label push-1-4" for="male">Male</label>
+              </li>
+              <li>
+                <input type="radio" id="female" name="gender">
+                <label class="label push-1-4" for="female">Female</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="unit xs-1 s-1 push-0">
+            <legend class="label push-1-4 not-bold" >Are you willing to adopt a dog of any age?</legend>
+            <ul class="list-group">
+              <li>
+                <input type="radio" id="yes" name="age">
+                <label class="label push-1-4" for="yes">Yes</label>
+              </li>
+              <li>
+                <input type="radio" id="no" name="age">
+                <label class="label push-1-4" for="no">No</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
       </div>
-
-      <div class="unit xs-1 s-1 push">
-        <label class="label push-1-4" for="doggo">Dog of interest</label>
-        <select class="gutter-1-2" id="doggo">
-          <option>Mai</option>
-          <option>Lucy</option>
-          <option>Gus</option>
-          <option>Pal</option>
-          <option>Snickers</option>
-        </select>
-      </div>
-
-      <fieldset class="unit xs-1 s-1 push-0">
-        <legend class="label push-1-4 not-bold" >Do you have a preference of male or female?</legend>
-        <ul class="list-group">
-          <li>
-            <input type="radio" id="male" name="gender">
-            <label class="label push-1-4" for="male">Male</label>
-          </li>
-          <li>
-            <input type="radio" id="female" name="gender">
-            <label class="label push-1-4" for="female">Female</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset class="unit xs-1 s-1 push-0">
-        <legend class="label push-1-4 not-bold" >Are you willing to adopt a dog of any age?</legend>
-        <ul class="list-group">
-          <li>
-            <input type="radio" id="yes" name="age">
-            <label class="label push-1-4" for="yes">Yes</label>
-          </li>
-          <li>
-            <input type="radio" id="no" name="age">
-            <label class="label push-1-4" for="no">No</label>
-          </li>
-        </ul>
-      </fieldset>
     </div>
   </form>
 
   <form class="gutter background-form references pad-t-1-2">
     <h2 class="tena text-center russ pad-t-2">References, please</h2>
-    <h3 class="text-center ref">Reference #1</h3>
-    <div class="push-1-2">
-      <label class="ref push-1-4" for="name">Full Name</label>
-      <input id="name" required>
-    </div>
-    <div class="push">
-      <label class="ref push-1-4" for="address">Address</label>
-      <input class="push-1-2" type="text" id="address" placeholder="Street Address">
-      <input class="push-1-2" type="text" id="address" placeholder="Street Address Line 2">
-      <input class="push-1-2"  type="text" id="address" placeholder="City">
-      <input class="push-1-2"  type="text" id="address" placeholder="Province">
-      <input class="push-1-2"  type="text" id="address" placeholder="Postal Code">
-      <input class="push-1-2"  type="text" id="address" placeholder="Country">
-    </div>
-    <div class="push-1-2">
-      <label class="ref push-1-4" for="phone">Phone Number</label>
-      <input type="tel" id="phone">
-    </div>
-    <div class="push-1-2">
-      <label class="ref push-1-4" for="email">Email</label>
-      <input type="email" id="email">
-    </div>
-    <div class="push-2">
-      <label class="ref push-1-4" for="relation">Relationship to applicant</label>
-      <input type="text" id="relation">
-    </div>
-    <h3 class="ref text-center">Reference #2</h3>
-    <div class="push-1-2">
-      <label class="ref push-1-4" for="name">Full Name</label>
-      <input id="name" required>
-    </div>
-    <div class="push">
-      <label class="ref push-1-4" for="address">Address</label>
-      <input class="push-1-2" type="text" id="address" placeholder="Street Address">
-      <input class="push-1-2" type="text" id="address" placeholder="Street Address Line 2">
-      <input class="push-1-2"  type="text" id="address" placeholder="City">
-      <input class="push-1-2"  type="text" id="address" placeholder="Province">
-      <input class="push-1-2"  type="text" id="address" placeholder="Postal Code">
-      <input class="push-1-2"  type="text" id="address" placeholder="Country">
-    </div>
-    <div class="push-1-2">
-      <label class="ref push-1-4" for="phone">Phone Number</label>
-      <input type="tel" id="phone">
-    </div>
-    <div class="push-1-2">
-      <label class="ref push-1-4" for="email">Email</label>
-      <input type="email" id="email">
-    </div>
-    <div class="push-1-2">
-      <label class="ref push-1-4" for="relation">Relationship to applicant</label>
-      <input type="text" id="relation">
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 gutter">
+        <h3 class="text-center ref">Reference #1</h3>
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-1-2">
+            <label class="ref push-1-4" for="name">Full Name</label>
+            <input id="name" required>
+          </div>
+          <div class="unit xs-1 s-1 push-1-4">
+            <label class="ref push-1-4" for="address">Address</label>
+            <input class="push-1-2" type="text" id="address" placeholder="Street Address">
+          </div>
+          <div class="unit xs-1 s-1 push-1-4">
+            <input class="push-1-2" type="text" id="address" placeholder="Street Address Line 2">
+          </div>
+          <div class="unit xs-1-3 s-1-3 space push-1-4">
+            <input class="push-1-2"  type="text" id="address" placeholder="City">
+          </div>
+          <div class="unit xs-2-3 s-2-3 push-1-4">
+            <input class="push-1-2"  type="text" id="address" placeholder="Province">
+          </div>
+          <div class="unit xs-1-3 s-1-3 space push-1-4">
+            <input class="push-1-2"  type="text" id="address" placeholder="Postal Code">
+          </div>
+          <div class="unit xs-2-3 s-2-3 push-1-2">
+            <input class="push-1-2"  type="text" id="address" placeholder="Country">
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-1-2">
+            <label class="ref push-1-4" for="phone">Phone Number</label>
+            <input type="tel" id="phone">
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-1-2">
+            <label class="ref push-1-4" for="email">Email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-2">
+            <label class="ref push-1-4" for="relation">Relationship to applicant</label>
+            <input type="text" id="relation">
+          </div>
+        </div>
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 gutter">
+        <h3 class="ref text-center">Reference #2</h3>
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-1-2">
+            <label class="ref push-1-4" for="name">Full Name</label>
+            <input id="name" required>
+          </div>
+          <div class="unit xs-1 s-1 push-1-4">
+            <label class="ref push-1-4" for="address">Address</label>
+            <input class="push-1-2" type="text" id="address" placeholder="Street Address">
+          </div>
+          <div class="unit xs-1 s-1 push-1-4">
+            <input class="push-1-2" type="text" id="address" placeholder="Street Address Line 2">
+          </div>
+          <div class="unit xs-1-3 s-1-3 space push-1-4">
+            <input class="push-1-2"  type="text" id="address" placeholder="City">
+          </div>
+          <div class="unit xs-2-3 s-2-3 push-1-4">
+            <input class="push-1-2"  type="text" id="address" placeholder="Province">
+          </div>
+          <div class="unit xs-1-3 s-1-3 space push-1-4">
+            <input class="push-1-2"  type="text" id="address" placeholder="Postal Code">
+          </div>
+          <div class="unit xs-2-3 s-2-3 push-1-2">
+            <input class="push-1-2"  type="text" id="address" placeholder="Country">
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-1-2">
+            <label class="ref push-1-4" for="phone">Phone Number</label>
+            <input type="tel" id="phone">
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-1-2">
+            <label class="ref push-1-4" for="email">Email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1 xl-1 push-2">
+            <label class="ref push-1-4" for="relation">Relationship to applicant</label>
+            <input type="text" id="relation">
+          </div>
+        </div>
+      </div>
     </div>
     <div class="center-content pad-b-2 pad-t-2">
       <button class="btn btn-ghost-form" type="submit">Submit</button>
@@ -227,7 +275,7 @@
     <form class="pad-t" id="subscribe">
       <div class="gutter center-content">
         <label class="push-1-2 text-center" for="email">Subscribe to our newsletter</label>
-        <input class="push" id="email" type="email" placeholder="me@me.com" required>
+        <input class="push max-length" id="email" type="email" placeholder="me@me.com" required>
         <button class="pack" type="submit">Subscribe</button>
       </div>
     </form
