@@ -15,7 +15,6 @@ html {
   transition: all 0.3s ease 0s;
 }
 
-
 .donate {
   margin-top: 20px;
 }
@@ -149,6 +148,10 @@ html {
 
 .rescues {
   background-color: #E85746;
+}
+
+.rescues h1{
+  color: #fff;
 }
 
 .adoption {
@@ -288,6 +291,28 @@ html {
       transform: translateY(-7px);
     }
 
+    .btn-ghost-subscribe{
+      border-radius: 50px;
+      border: none;
+      color: #1C488E;
+      background-color: #F1C33D;
+      padding-left: 6em;
+      padding-right: 6em;
+      padding-top: .7em;
+      padding-bottom: .7em;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .btn-ghost-subscribe:hover {
+        background-color: #E85746;
+        box-shadow: 0px 15px 20px #FBB5AD;
+        color: #fff;
+        transform: translateY(-7px);
+      }
+
 input, select, textarea {
   border: 0;
   filter: drop-shadow(0px 3px 5px #A1A1A1);
@@ -310,6 +335,14 @@ fieldset {
 }
 
 .russ {
+  color: #1C488E;
+}
+
+.adoption h1, p {
+  color: #fff;
+}
+
+.adopt-links {
   color: #fff;
 }
 
@@ -332,7 +365,7 @@ fieldset {
 }
 
 h1 {
-  color: #fff;
+  color: #1C488E;
 }
 
 .form {
@@ -367,7 +400,7 @@ h3 {
   border-radius: 50px;
   border: none;
   color: #fff;
-  background-color: #F1C33D;
+  background-color: #1C488E;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: .7em;
@@ -471,8 +504,19 @@ footer {
 }
 
 .desktop a:hover {
-  color: #F1C33D;
+  color: #F1C33D;;
   border-bottom: 3px solid #F1C33D;
+  transition: all 0.3s ease 0s;
+  transform: translateY(-5px);
+}
+
+.home a {
+  color: #1C488E;
+}
+
+.home a:hover {
+  color: #E85746;
+  border-bottom: 3px solid #E85746;
   transition: all 0.3s ease 0s;
   transform: translateY(-5px);
 }
@@ -494,6 +538,7 @@ footer {
 }
 
 .support p {
+  color: #1C488E;
   padding-top: 80px;
 }
 
@@ -576,4 +621,3 @@ footer {
       border-radius: 100px;
       transition: all 0.3s ease 0s;
   }
-}

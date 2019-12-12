@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Available for Adoption</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-196.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -12,10 +14,17 @@
 </head>
 <body>
 
-  <header class="rescues">
-    <nav role="navigation" class="pad-t mobile">
-      <div id="menuToggle">
-        <input type="checkbox" />
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#main">Jump to main content</a></li>
+  </ul>
+
+  <div id="top"></div>
+
+  <header role="banner" class="rescues">
+    <nav class="pad-t mobile">
+      <div id="menutoggle">
+        <input type="checkbox" id="checkbox">
         <span></span>
         <span></span>
         <span></span>
@@ -28,7 +37,7 @@
         </ul>
       </div>
     </nav>
-    <nav role="navigation" class="desktop">
+    <nav role="navigation" id="nav" tabindex="0" class="desktop">
       <ul class="list-group-inline gutter-1-2">
         <li><a class="link-box gutter-1-4 milli" href="rescues.html">Available Dogs</a></li>
         <li><a class="link-box gutter-1-4 milli" href="adopt.html">Adoption & Fostering</a></li>
@@ -41,8 +50,8 @@
       <a href="index.html"><img class="pad-t-1-2" src="images/logo.svg" alt=""></a>
     </i>
     <h1 class="text-center tenamega bold pad-t-2 push-0">Available for Adoption</h1>
-    <div>
-      <img class="img-flex" src="images/russ.png" alt="">
+    <div class="embed embed-16by9">
+      <img class="embed-item img-flex" src="images/russ.png" alt="">
     </div>
   </header>
 
@@ -149,33 +158,27 @@
         <p class="gutter text-center">Make sure to follow us on Instagram to see all our latest updates!</p>
       </div>
     </div>
-
-    <a id="myBtn" href="#top">
-      <i class="icon-18">
-        <img src="images/top.svg" alt="">
-      </i>
-    </a>
   </main>
 
-    <footer role="contentinfo" class="unit xs-1 s-1 m-1 l-1 xl-1">
-      <form class="pad-t" id="subscribe">
-        <div class="gutter center-content">
-          <label class="push-1-2 text-center" for="email">Subscribe to our newsletter</label>
-          <input class="max-length push" id="email" type="email" placeholder="me@me.com" required>
-          <button class="pack" type="submit">Subscribe</button>
-        </div>
-      </form>
-      <i class="icon i-96">
-        <svg><use xlink:href="images/social-icons.svg#facebook" /></svg>
-      </i>
-      <i class="icon i-96">
-        <svg><use xlink:href="images/social-icons.svg#instagram" /></svg>
-      </i>
-      <i class="icon i-96">
-        <svg><use xlink:href="images/social-icons.svg#twitter" /></svg>
-      </i>
-      <p class="pico text-center push-0">ALL BREED DOG RESCUE IN OTTAWA © ALL RIGHTS RESERVED</p>
-    </footer>
+  <footer role="contentinfo" class="unit xs-1 s-1 m-1 l-1 xl-1">
+    <form method="post" action="..." class="pad-t" id="subscribe">
+      <div class="gutter center-content">
+        <label class="push-1-2 text-center" for="email">Subscribe to our newsletter</label>
+        <input class="max-length push" id="email" type="email" placeholder="me@me.com" required>
+        <button class="btn-ghost-subscribe" type="submit">Subscribe</button>
+      </div>
+    </form>
+    <i class="icon i-96">
+      <svg><use xlink:href="images/social-icons.svg#facebook" /></svg>
+    </i>
+    <i class="icon i-96">
+      <svg><use xlink:href="images/social-icons.svg#instagram" /></svg>
+    </i>
+    <i class="icon i-96">
+      <svg><use xlink:href="images/social-icons.svg#twitter" /></svg>
+    </i>
+    <p class="pico text-center push-0">ALL BREED DOG RESCUE IN OTTAWA © ALL RIGHTS RESERVED</p>
+  </footer>
 
   </body>
   </html>
