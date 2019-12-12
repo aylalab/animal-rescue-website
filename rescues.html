@@ -25,6 +25,7 @@
     <nav class="pad-t mobile">
       <div id="menutoggle">
         <input type="checkbox" id="checkbox">
+        <label class="hidden" for="checkbox">check</label>
         <span></span>
         <span></span>
         <span></span>
@@ -47,16 +48,16 @@
       </ul>
     </nav>
     <i class="icon i-64 pin-right-top">
-      <a href="index.html"><img class="pad-t-1-2" src="images/logo.svg" alt=""></a>
+      <a href="index.html" aria-label="Freedom dog rescue logo"><img class="pad-t-1-2" src="images/logo.svg" alt=""></a>
     </i>
-    <h1 class="text-center tenamega bold pad-t-2 push-0">Available for Adoption</h1>
+    <h1 class="text-center gutter tenamega bold pad-t-2 push-0">Available for Adoption</h1>
     <div class="embed embed-16by9">
       <img class="embed-item img-flex" src="images/russ.png" alt="">
     </div>
   </header>
 
   <main role="main" id="main" tabindex="0">
-    <div class="grid">
+    <article class="grid">
       <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 mai pad-b-2">
         <h2 class="pad-t-2 tenamega text-center">Hello, I'm Mali!</h2>
         <div class="center">
@@ -76,7 +77,7 @@
           <a class="btn btn-ghost-adopt" href="adopt.html">Adopt me</a>
         </div>
       </div>
-      <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 lucy pad-b-2">
+      <section class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 lucy pad-b-2">
         <h2 class="pad-t-2 tenamega text-center push-2">Hello, I'm Mindy!</h2>
         <div class="center">
           <img class="img-flex push-2" src="images/mindy.png" alt="">
@@ -94,8 +95,8 @@
         <div class="center-content">
           <a class="btn btn-ghost-adopt" href="adopt.html">Adopt me</a>
         </div>
-      </div>
-      <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 gus pad-b-2">
+      </section>
+      <section class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 gus pad-b-2">
         <h2 class="pad-t-2 tenamega text-center">Hello, I'm Gus!</h2>
         <div class="center-content">
           <img class="img-flex push" src="images/gus.png" alt="">
@@ -111,10 +112,10 @@
           <li>Friends with other dogs who like to play rough with me!</li>
         </ul>
         <div class="center-content">
-          <a class="btn btn-ghost-adopt" href="adopt.html">Adopt me</a>
+          <a class="btn btn-ghost-adopt-gus" href="adopt.html">Adopt me</a>
         </div>
-      </div>
-      <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 pal pad-b-2">
+      </section>
+      <section class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 pal pad-b-2">
         <h2 class="pad-t-2 tenamega text-center">Hello, I'm Mickey!</h2>
         <div class="center-content">
           <img class="img-flex push" src="images/mickey.png" alt="">
@@ -132,8 +133,8 @@
         <div class="center-content">
           <a class="btn btn-ghost-adopt" href="adopt.html">Adopt me</a>
         </div>
-      </div>
-      <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 snickers pad-b-2">
+      </section>
+      <section class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 snickers pad-b-2">
         <h2 class="pad-t-2 tenamega text-center">Hello, I'm Luna!</h2>
         <div class="center-content">
           <img class="img-flex push gutter" src="images/luna.png" alt="">
@@ -151,13 +152,13 @@
         <div class="center-content">
           <a class="btn btn-ghost-adopt-rev" href="adopt.html">Adopt me</a>
         </div>
-      </div>
+      </section>
       <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
         <h3 class="gutter pad-t-2 text-center">Check Back Next Week for More Adoptables!</h3>
-        <p class="gutter text-center">We update our website weekly with all the new friends who’ve joined us, and remove those who have found their fur-ever homes.</p>
-        <p class="gutter text-center">Make sure to follow us on Instagram to see all our latest updates!</p>
+        <p class="update gutter text-center">We update our website weekly with all the new friends who’ve joined us, and remove those who have found their fur-ever homes.</p>
+        <p class="update gutter text-center">Make sure to follow us on Instagram to see all our latest updates!</p>
       </div>
-    </div>
+    </article>
   </main>
 
   <footer role="contentinfo" class="unit xs-1 s-1 m-1 l-1 xl-1">
@@ -180,5 +181,5 @@
     <p class="pico text-center push-0">ALL BREED DOG RESCUE IN OTTAWA © ALL RIGHTS RESERVED</p>
   </footer>
 
-  </body>
-  </html>
+</body>
+</html>
